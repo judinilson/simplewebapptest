@@ -5,7 +5,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 
 const app = express();
 const sequelize = new Sequelize(config.development);
-// Test the connection
+// Testing the connection
 sequelize
   .authenticate()
   .then(() => {
@@ -45,7 +45,6 @@ app.post("/updateBalance", async (req, res) => {
   }
 });
 sequelize.sync({ force: true }).then(async () => {
-  // Add one user with a balance of 10000
   await User.create();
 
   const PORT = process.env.PORT || 3000;
