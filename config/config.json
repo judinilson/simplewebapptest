@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "ghost",
+    "password": "password",
+    "database": "simplewebapp",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "ghost",
+    "password": "password",
+    "database": "simplewebapp",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "ghost",
+    "password": "password",
+    "database": "simplewebapp_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
